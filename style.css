@@ -186,7 +186,7 @@ padding-left:0;
 
 .box3o{
 	font-size:30px;
-	background-color:#0000EB;
+	background-image:url('../images/overviewBG.png');
 	grid-column:2/6;
 	grid-row:2;
 	display:grid;
