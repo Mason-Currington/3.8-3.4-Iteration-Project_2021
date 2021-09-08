@@ -1,54 +1,200 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<link rel="stylesheet" href="css/style.css"/>
-			<title>COVID Info</title>
-			<meta name="author" charset="Mason Currington, 2021"/>
-			<meta charset="UTF-8"/>
-		</head>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>COVID Info</title>
+    <meta name="author" charset="Mason Currington, 2021"/>
+    <meta charset="UTF-8"/>
 
-		<body>
-			<a name="top"></a>
-			<div class="wrapper">
-			<div class="box1"><img src="images/Banner3.png" height="100%" width="100%"/></div>
-			
-		<nav role="navigation">
-			<div id="menuToggle">
-			<input type="checkbox"/>
-    
-			<span></span>
-			<span></span>
-			<span></span>
-   
-		<ul id="menu">
-			<a href="Support.html"><li>Support</li></a>
-			<a href="Overview.html"><li>Home</li></a>
-		</ul>
-	</div>
-	</nav>	
-			<div class="top">
-			<a href="#top"><li>^</li></a>
-		</div>
-	<div class="box3">
-		<div class="content3"><h2>What is COVID?</h2><p>COVID-19 is a disease caused by the coronavirus SARS-CoV-2, and it affects you lungs ,airways and other organs too. COVID was first recognized in China, and has likely originated from animals. It is still unclear of how the virus came into contact with humans, and the virus has spread to other countries. The World Health Organization (WHO) declared a pandemic on the 11th of March, 2020.</p><br>There are multiple variants of COVID, each found in a different part of the world.
-			<ul>
-				<li>Alpha - First found in the United Kingdom</li>
-				<li>Beta - First found in South America</li>
-				<li>Gamma - First found in Brazil</li>
-				<li>Delta - First found in India</li>
-			</ul>
-		The Ministry of Health is providing updates on these variants.
-		</div>
-		<div class="content4"><h2>COVID at School</h2><p>Text</div>
-		<div class="content5"><h2>Alert Levels</h2><p><u>Level 1:</u><p>Staying home if you're sick is really important at L1, because the risk of COVID getting spread into the community is much greater. You must also wear a face covering if you're on public transport, on a domestic flight and when in taxis. Also make sure you keep track of where you've been.</p><u>Level 2:</u><p>If you are sick, stay home and don't go to work/school. If you have been told to self-isolate, you must do so. Same rules apply for when to wear face coverings and keeping track of where you go. Borders are closed to almost all travellers to help stop the spread of COVID. There are controls at the borders for those entering NZ. Physical distancing rules are at least 2m separation in public areas, and 1m separation in other areas, like workplaces. Gatherings are capped off at 100 people.</p><u>Level 3:</u><p>Same rules apply as L2 when you're unwell. Same rules for face coverings, but you're also encouraged to wear them when you go out in public. Use the COVID Tracker app to help keep track of where you go. At L3 you must stay at home whenever you're not at work or school, same social distancing rules apply as L2 and you can only travel locally. Gatherings get reduced to a cap of 10 people, and only for certain activities such as weddings or funerals.</p><u>Level 4:</u><p>Level 4 is lockdown. You have to stay at home/in your own bubble and can only leave the house for certain activities, like shopping for essentials. Almost all businesses are closed, along with all schools.</p>To find more information, visit the official NZ COVID website <a href="https://covid19.govt.nz/">here:</a></div>
-		<div class="content6"><h2>Recent Activity</h2><p>Text</div>
-	</div>
-	<div class="box4"><h2>Booking/Registering</h2><p>Text<br>Text<br>Text<br>Text<img src="images/vaccine.jpg" height="200px"/></div>
-	<div class="box5">&copy Mason Currington 2021</div>
+    <script>
+        function onload() {
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                        content.style.maxHeight = "0px";
+                    } else {
+                        content.style.display = "block";
+                        content.style.maxHeight = "unset";
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+
+<body onload="onload()">
+<a name="top"></a>
+<div class="wrapper">
+    <div class="box1"><img src="images/Banner3.png" height="100%" width="100%"/></div>
+
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox"/>
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="Support.html">
+                    <li>Support</li>
+                </a>
+                <a href="Overview.html">
+                    <li>Home</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="top">
+        <a href="#top">
+            <li>^</li>
+        </a>
+    </div>
+    <div class="box3">
+        <div class="content3">
+            <h2>What is COVID?</h2>
+            <p>COVID-19 is a disease caused by the coronavirus SARS-CoV-2, and it affects you lungs ,airways and other
+                organs too. COVID was first recognized in China, and has likely originated from animals. It is still
+                unclear of how the virus came into contact with humans, and the virus has spread to other countries. The
+                World Health Organization (WHO) declared a pandemic on the 11th of March, 2020.</p><br>There are
+            multiple variants of COVID, each found in a different part of the world.
+            <ul>
+                <li>Alpha - First found in the United Kingdom</li>
+                <li>Beta - First found in South America</li>
+                <li>Gamma - First found in Brazil</li>
+                <li>Delta - First found in India</li>
+            </ul>
+            The Ministry of Health is providing updates on these variants.
+        </div>
+        <div class="content4">
+            <h2>COVID at School</h2>
+            <p>If there are proper COVID cases at school, then the school will close down until further notice. To
+                prevent COVID from getting into the school as best we can, everyone needs to follow the rules depending
+                on what alert level we're currently on. Through all the levels you are encouraged to stay home when sick
+                and use sanitiser when leaving a classroom. On higher levels you're encouraged to wear a mask at school,
+                and assemblies are called off to help prevent any easy contamination from happening.</div>
+        <div class="content5">
+
+            <h2>Alert Levels</h2>
+            <!-- Collapsible Code Level 1 -->
+            <button type="button" class="collapsible"><u>Level 1:</u></button>
+            <div class="content">
+                <p>TExtetettdvfejfvbejvfehjfvej</p>
+            </div>
+
+            <style>
+                .content {
+                    padding: 0 18px;
+                    background-color: ebebeb;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            </style>
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+
+                for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight) {
+                            content.style.maxHeight = null;
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script>
+            <!-- Collapsible Code End -->
+            <p></p>
+            <!-- Collapsible Code Level 2-->
+            <button type="button" class="collapsible"><u>Level 2:</u></button>
+            <div class="content">
+                <p>Text</p>
+            </div>
+
+            <style>
+                .content {
+                    padding: 0 18px;
+                    background-color: ebebeb;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            </style>
+
+            <!-- Collapsible Code End -->
+            <p></p>
+            <!-- Collapsible Code Level 3 -->
+            <button type="button" class="collapsible"><u>Level 3</u></button>
+            <div class="content">
+                <p>Text</p>
+            </div>
+            <style>
+                .content {
+                    padding: 0 18px;
+                    background-color: ebebeb;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            </style>
+
+            <!-- Collapsible Code End -->
+            <p></p>
+            <!-- Collapsible Code Level 4 -->
+            <button type="button" class="collapsible"><u>Level 4</u></button>
+            <div class="content">
+                <p>Text</p>
+            </div>
+            <style>
+                .content {
+                    padding: 0 18px;
+                    background-color: ebebeb;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            </style>
+
+            <!-- Collapsible Code End -->
+            <p><u>Level 1:</u>
+            <p>Staying home if you're sick is really important at L1, because the risk of COVID getting spread into the
+                community is much greater. You must also wear a face covering if you're on public transport, on a
+                domestic flight and when in taxis. Also make sure you keep track of where you've been.</p><u>Level
+            2:</u>
+            <p>If you are sick, stay home and don't go to work/school. If you have been told to self-isolate, you must
+                do so. Same rules apply for when to wear face coverings and keeping track of where you go. Borders are
+                closed to almost all travellers to help stop the spread of COVID. There are controls at the borders for
+                those entering NZ. Physical distancing rules are at least 2m separation in public areas, and 1m
+                separation in other areas, like workplaces. Gatherings are capped off at 100 people.</p><u>Level 3:</u>
+            <p>Same rules apply as L2 when you're unwell. Same rules for face coverings, but you're also encouraged to
+                wear them when you go out in public. Use the COVID Tracker app to help keep track of where you go. At L3
+                you must stay at home whenever you're not at work or school, same social distancing rules apply as L2
+                and you can only travel locally. Gatherings get reduced to a cap of 10 people, and only for certain
+                activities such as weddings or funerals.</p><u>Level 4:</u>
+            <p>Level 4 is lockdown. You have to stay at home/in your own bubble and can only leave the house for certain
+                activities, like shopping for essentials. Almost all businesses are closed, along with all schools.</p>
+            To find more information, visit the official NZ COVID website <a href="https://covid19.govt.nz/">here:</a>
+        </div>
+        <div class="content6"><h2>Recent Activity</h2>
+            <p>Text</div>
+    </div>
+    <div class="box4"><h2>Booking/Registering</h2>
+        <p>Text<br>Text<br>Text<br>Text<img src="images/vaccine.jpg" height="200px"/></div>
+    <div class="box5">&copy Mason Currington 2021</div>
 </div>
-		</body>
+</body>
 
-		<footer>
-			
-		</footer>
-	</html>
+<footer>
+</footer>
+</html>
