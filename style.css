@@ -280,6 +280,7 @@ b{
 	grid-column:5/6;
 	grid-row:2;
 	opacity:98%;
+	padding:5px;
 }
 
 .box5{
@@ -365,9 +366,4 @@ color:#FFC108;
 
 .active:after {
   content: '\2796'; /* Unicode character for "minus" sign (-) */
-  font-size: 13px;
-  color: blue;
-  float: right;
-  margin-left: 5px;
-
 }
